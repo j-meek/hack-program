@@ -1,4 +1,4 @@
-# hack-program
+# juniper
 
 ## Program for determining *Juniperus* species based on location.
 
