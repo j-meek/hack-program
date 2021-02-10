@@ -13,7 +13,7 @@ def species(arg):
     if arg == "west":
         print("Juniperus osteosperma")
 
-    else:
+    elif arg == "east":
         print("Juniperus virginiana")
 
 
