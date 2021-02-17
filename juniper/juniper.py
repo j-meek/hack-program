@@ -40,4 +40,4 @@ def where(coord):
 if __name__ == "__main__":
     species('east')
     species('west')
-    where(41)
+    where(42)

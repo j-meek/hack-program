@@ -55,10 +55,10 @@ def main():
     elif args.west:
         species('west')
     elif args.coordinate:
-        where(41)
+        where(42)
 
 
 if __name__ == "__main__":
     species('east')
     species('west')
-    where(41)
+    where(42)
