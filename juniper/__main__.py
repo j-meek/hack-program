@@ -5,25 +5,32 @@ Command line interface to juniper
 """
 
 import argparse
-from juniper import species
+from juniper import species, where
 
 
 def parse_command_line():
-    "parses args for the juniper funtion"
+    "parses args for the juniper function"
 
     # init parser and add arguments
     parser = argparse.ArgumentParser()
 
     # add long args
     parser.add_argument(
-        "--east",
-        help="returns species name for eastern U.S.",
+        "-east",
+        help="Returns species name for eastern U.S.",
         action="store_true")
 
     # add long args
     parser.add_argument(
-        "--west",
-        help="returns species name for western U.S.",
+        "-west",
+        help="Returns species name for western U.S.",
+        action="store_true")
+
+    # add long args
+    parser.add_argument(
+        "-c",
+        "--coordinate",
+        help="Returns region based on lat or long.",
         action="store_true")
 
     # parse args
@@ -42,12 +49,16 @@ def main():
     # get arguments from command line as a dict-like object
     args = parse_command_line()
 
-    # pass argument to call darwinday function
+    # pass argument to call species function
     if args.east:
         species('east')
     elif args.west:
         species('west')
+    elif args.coordinate:
+        where(41)
 
 
 if __name__ == "__main__":
     species('east')
+    species('west')
+    where(41)

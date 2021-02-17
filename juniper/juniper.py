@@ -4,6 +4,8 @@
 A function to determine Juniperus species based on location
 """
 
+import numpy as np
+
 
 def species(arg):
     """
@@ -17,6 +19,25 @@ def species(arg):
         print("Juniperus virginiana")
 
 
+def where(coord):
+    """
+    returns region based on longitude
+    """
+
+    if coord in np.arange(-124, -101):
+        print("west")
+
+    elif coord in np.arange(-101, -66):
+        print("east")
+
+    elif coord in np.arange(25, 41):
+        print("south")
+
+    elif coord in np.arange(41, 49):
+        print("north")
+
+
 if __name__ == "__main__":
     species('east')
     species('west')
+    where(41)
