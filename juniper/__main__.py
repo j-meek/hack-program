@@ -31,7 +31,8 @@ def parse_command_line():
         "-c",
         "--coordinate",
         help="Returns region based on lat or long.",
-        action="store_true")
+        action="store",
+        type=int)
 
     # parse args
     args = parser.parse_args()
@@ -55,7 +56,7 @@ def main():
     elif args.west:
         species('west')
     elif args.coordinate:
-        where(42)
+        where(args.coordinate)
 
 
 if __name__ == "__main__":
