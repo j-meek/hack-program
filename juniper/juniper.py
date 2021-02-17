@@ -5,6 +5,7 @@ A function to determine Juniperus species based on location
 """
 
 import numpy as np
+#import pandas as pd
 
 
 def species(arg):
@@ -21,8 +22,10 @@ def species(arg):
 
 def where(coord):
     """
-    returns region based on longitude
+    creates DataFrame and returns region based on longitude
     """
+
+    #long = pd.DataFrame(np.random.normal(-90, 20, 100), columns=['longitude'])
 
     if coord in np.arange(-124, -101):
         print("west")
