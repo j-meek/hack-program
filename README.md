@@ -1,10 +1,19 @@
 # juniper
 
-## Program for determining *Juniperus* species based on location.
+## Program for determining *Juniperus* species based on location, and location based on latitude or longitude.
 
-Takes two arguments, `east` or `west`.
+Takes three arguments, `east`, `west`, or `coordinate`.
 
-On command line, type `juniper --east` to discover common species in the eastern U.S., `juniper --west` for common species in the western U.S., or `juniper --help` for more info.
+On command line, type `juniper --east` to discover common species in the eastern U.S., `juniper --west` for common species in the western U.S., or `juniper --help` for more info. Type `juniper --c` and provide an integer to determine cardinal direction.
+
+Example:
+"""
+juniper --east
+Juniperus virginiana
+
+juniper -c 42
+north
+"""
 
 East
 ![https://media.embassylandscape.com/uploads/2019/01/juniper-berries-close-up.jpg](https://media.embassylandscape.com/uploads/2019/01/juniper-berries-close-up.jpg)
