@@ -4,7 +4,7 @@
 
 Takes three arguments, `east`, `west`, or `coordinate`.
 
-On command line, type `juniper --east` to discover common species in the eastern U.S., `juniper --west` for common species in the western U.S., or `juniper --help` for more info. Type `juniper --c` and provide an integer to determine cardinal direction.
+On command line, type `juniper --east` to discover common species in the eastern U.S., `juniper --west` for common species in the western U.S., or `juniper --c` and provide an integer to determine cardinal direction. Type `juniper --help` for more info.
 
 Example:
 ```bash
